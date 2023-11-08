@@ -1,0 +1,67 @@
+/* Reset de estilos padrão para remover margens e preenchimento */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos básicos da calculadora */
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(177, 177, 177);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.calculator {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  width: 300px;
+}
+
+.display {
+  background-color: whitesmoke;
+  font-size: 24px;
+  padding: 10px;
+  text-align: right;
+  border-radius: 8px 8px 0 0;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  border: none;
+  padding: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.button--operator {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.button--operator:hover {
+  background-color: #ccc;
+}
+
+.key--equal {
+  grid-row: span 4;
+  background-color: orange;
+}
+.key--equal:hover{
+  background-color: chocolate;
+}
